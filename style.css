@@ -7,18 +7,23 @@
 #root{
     background-color: #1B1B1B;
     display: flex;
-    height: 100vh;
+
 
 }
 
 #left-nav{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1.0)), url('./assets/web-development-trends-2019.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1.0)), url('./assets/lHjYzzm.jpg');
+    background-position: 10%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     min-width: 25%;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
 
 }
 
@@ -45,10 +50,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
-#nav-contact{
+#nav-contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#contact-icons{
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 2px;
+
+}
+
+#nav-contact img{
     display: flex;
     flex-wrap: wrap;
-
+    width: 35px;
+    height: 35px;
+    padding: 3px;    
 }
 
 #nav-contact h3{
@@ -105,6 +125,7 @@
     flex-direction: column;
     flex: 3 1 0;
     padding: 4rem;
+    margin-left: 25%;
     
     
 }
