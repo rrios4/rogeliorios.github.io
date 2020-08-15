@@ -261,6 +261,12 @@ body{
 
     }
 
+    #container-card{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
     #info-card{
         display: flex;
         flex-direction: column-reverse;
@@ -285,16 +291,38 @@ body{
     }
 
     #time-line{
-        padding-right: 2rem;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-right: unset;
+        
     }
 
+    #time-line p{
+        color: white;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: lighter;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #line{
+        height: 1px;
+        width: 125px;
+        align-self: center;
+    }
     #left-nav{
         display: flex;
         width: 100%;
         max-width: 100%;
-        max-height: 300px;
+        max-height: unset;
         position: unset;
         overflow: unset;
+        background-position: 50%;
 
     }
 
