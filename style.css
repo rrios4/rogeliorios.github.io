@@ -11,6 +11,7 @@ body{
 #root{
     background-color: #1b1b1b;
     display: flex;
+    flex-direction: row;
 }
 
 #left-nav{
@@ -19,7 +20,7 @@ body{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    flex: 1 8 0;
+    flex: 1 1 0;
     min-width: 25%;
     max-width: 35%;
     position: fixed;
@@ -289,13 +290,17 @@ body{
 
     #left-nav{
         display: flex;
+        width: 100%;
         max-width: 100%;
-        position: relative;
+        max-height: 300px;
+        position: unset;
+        overflow: unset;
+
     }
 
     .page-content{
         padding: 3rem;
-        margin-left: 0rem;
+        margin-left: unset;
     }
     
     #card-img img{
