@@ -323,6 +323,16 @@ body{
         width: 125px;
         align-self: center;
     }
+
+    #profile-pic {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
     #left-nav{
         display: flex;
         width: 100%;
@@ -334,8 +344,14 @@ body{
 
     }
 
+    #nav-contact {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
     .page-content{
-        padding: 2rem;
+        padding: 1rem;
         margin-left: unset;
     }
     
