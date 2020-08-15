@@ -4,11 +4,13 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 #root{
     background-color: #1b1b1b;
     display: flex;
-
-
 }
 
 #left-nav{
@@ -23,7 +25,6 @@
     position: fixed;
     height: 100%;
     overflow: auto;
-
 
 }
 
@@ -46,7 +47,6 @@
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
-    font-family: 'Roboto', sans-serif;
 }
 
 #nav-contact {
@@ -74,7 +74,6 @@
     color: white;
     padding-left: 1rem;
     font-weight: 300;
-    font-family: 'Roboto', sans-serif;
 }
 
 #profile-pic {
@@ -102,7 +101,6 @@
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 300;
-    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -116,7 +114,6 @@
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .page-content{
@@ -128,15 +125,13 @@
     padding: 4rem;
     margin-left: 25%;
     
-    
 }
 
 #page-title{
     display: flex;
     align-items: flex-start;
     font-size: 28px;
-    letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
 }
 
 .sticky{
@@ -152,7 +147,7 @@
 
 #container-card{
     display: flex;
-    padding-top: 4rem;
+    padding-top: 3rem;
     
 }
 
@@ -171,7 +166,6 @@
     justify-content: center;
     flex: 1 1 0;
 
-
 }
 
 #line{
@@ -183,7 +177,6 @@
     color: white;
     font-size: 14px;
     font-weight: lighter;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 1px;
@@ -202,20 +195,38 @@
 
 #description-info h2{ 
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 400;
     padding-bottom: 3rem;
 }
 
+#description-info h4{ 
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 50px;
+    padding-bottom: 1rem;
+}
+
+#description-info h3{ 
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 200;
+    padding-left: 70px;
+    padding-bottom: 2rem;
+}
+
 #description-info p{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
 #description-info button{
     align-self: center;
     width: 150px;
@@ -235,13 +246,66 @@
 }
 
 #card-img img{
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     max-width: 100%;
-    max-height: 95%;
+    height: auto;
     padding: 2rem;
+
 }
 
+@media(max-width: 1024px){
+    #root{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #info-card{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #description-info{
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+    }
+
+    #description-info h2{
+        padding-bottom: 2rem;
+    }
+
+    #description-info h3{
+        padding-right: 2rem;
+    }
+
+    #description-info p{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #time-line{
+        padding-right: 2rem;
+    }
+
+    #left-nav{
+        display: flex;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .page-content{
+        padding: 3rem;
+        margin-left: 0rem;
+    }
+    
+    #card-img img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        padding: 2rem;
+    
+    }
+}
 
 
 
