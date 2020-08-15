@@ -261,9 +261,17 @@ body{
 
     }
 
+    #page-title{
+        display: flex;
+        align-self: center;
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+
     #container-card{
         display: flex;
         flex-direction: column;
+        padding-top: 1rem;
         
     }
 
