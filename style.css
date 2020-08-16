@@ -12,6 +12,7 @@ body{
     background-color: #1b1b1b;
     display: flex;
     flex-direction: row;
+    
 }
 
 #left-nav{
@@ -243,7 +244,8 @@ body{
 
 #card-img{
     display: flex;
-    flex: 3 1 0;
+    align-self: center;
+    flex: 2 1 0;
 }
 
 #card-img img{
