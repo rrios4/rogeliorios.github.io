@@ -16,7 +16,7 @@ body{
 }
 
 #left-nav{
-  background-image: linear-gradient(rgba(55, 25, 22, 0.7), rgba(5, 4, 4, 0.8)), url('./assets/lHjYzzm.jpg');
+  background-image: linear-gradient(rgba(55, 25, 22, 0.7), rgba(5, 4, 4, 0.8)), url('../assets/lHjYzzm.jpg');
   background-position: 10%;
   background-size: cover;
   display: flex;
