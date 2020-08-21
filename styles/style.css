@@ -15,6 +15,17 @@ body{
   
 }
 
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
 #left-nav{
   background-image: linear-gradient(rgba(55, 25, 22, 0.7), rgba(5, 4, 4, 0.8)), url('../assets/lHjYzzm.jpg');
   background-position: 10%;
@@ -88,9 +99,9 @@ body{
 }
 
 #profile-pic img{
-  max-width: 200px;
-  max-height: 200px;
-  border: 2px solid white;
+  max-width: 180px;
+  max-height: 180px;
+  border: 0px solid white;
   border-radius: 20rem;
 }
 
@@ -263,6 +274,78 @@ body{
 
   }
 
+  body{
+    overflow-x: hidden;
+  }
+
+  .burger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: flex-end;
+    padding-right: 2rem;
+    padding-top: 12px;
+    border-top: 1px solid #373737
+    
+  }
+
+  .burger div{
+    display: flex;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 3px;
+  }
+
+  .burger li{
+    padding: 0rem;
+  }
+
+  .nav-ul{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width:100%;
+    top: 16px;
+    left: 0;
+    padding-top: 2rem;
+    transition: .05s ease-in;
+    border-top: 1px solid #373737;
+  }
+
+  .nav-ul a:hover{
+    color: #DB5F5F;
+
+  }
+
+  .nav-active{
+    display: flex;
+  }
+
+  #nav-links {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: unset;
+    
+    
+  }
+
+  #nav-links a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  #nav-contact h3{
+    display: none;
+  }
+
+  #contact-icons {
+    display: none;
+  }
+
   #page-title{
       display: flex;
       align-self: center;
@@ -329,20 +412,21 @@ body{
   #profile-pic {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
       align-items: center;
-      padding-top: 4rem;
-      padding-bottom: 5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
   }
+
 
   #left-nav{
       display: flex;
-      width: 100%;
       max-width: 100%;
-      max-height: unset;
+      min-height: auto;
       position: unset;
       overflow: unset;
       background-position: 50%;
+      background-image: linear-gradient(rgba(81, 45, 100, 1.0), rgba(81, 45, 168, 1.0)), url('../assets/lHjYzzm.jpg');
+      
 
   }
 
@@ -353,7 +437,7 @@ body{
   }
 
   .page-content{
-      padding: 1rem;
+      padding: 1.5rem;
       margin-left: unset;
   }
   
@@ -365,6 +449,8 @@ body{
   
   }
 }
+
+
 
 
 
