@@ -27,7 +27,7 @@ body{
 }
 
 #left-nav{
-  background-image: linear-gradient(rgba(55, 25, 22, 0.7), rgba(5, 4, 4, 0.8)), url('../assets/lHjYzzm.jpg');
+  background-image: linear-gradient(rgba(81, 45, 100, 1.0), rgba(81, 45, 168, 0.9)), url('../assets/lHjYzzm.jpg');
   background-position: 10%;
   background-size: cover;
   display: flex;
@@ -44,7 +44,6 @@ body{
 #nav-links{
   display: flex;
   flex-direction: column;
-  padding-bottom: 10rem;
   text-align: center;
   
 }
@@ -63,7 +62,7 @@ body{
 }
 
 #nav-contact {
-  display: flex;
+  display: none;
   flex-direction: column;
 
 }
@@ -426,8 +425,6 @@ body{
       overflow: unset;
       background-position: 50%;
       background-image: linear-gradient(rgba(81, 45, 100, 1.0), rgba(81, 45, 168, 1.0)), url('../assets/lHjYzzm.jpg');
-      
-
   }
 
   #nav-contact {
