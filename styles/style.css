@@ -244,12 +244,16 @@ body{
   width: 150px;
   height: 50px;
   font-family: 'Roboto', sans-serif;
-  background-color: #DB5F5F;
+  background-color: #dd4f4f;
   color: whitesmoke;
   border: none;
   text-transform: uppercase;
   border-radius: 8px;
   
+}
+
+#description-info button:hover {
+  background-color:#DB5F5F;
 }
 
 #card-img{
